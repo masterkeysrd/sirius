@@ -2,8 +2,10 @@
   "name": "sirius-backend",
   "version": "1.0.0",
   "description": "Backend for Sirus App",
-  "main": "src/index.js",
+  "main": "./app.js",
   "scripts": {
+    "start": "node ./app.js",
+    "serve": "nodemon ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/masterkeysrd/sirius/issues"
   },
-  "homepage": "https://github.com/masterkeysrd/sirius#readme"
+  "homepage": "https://github.com/masterkeysrd/sirius#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
