@@ -1,0 +1,23 @@
+{
+  "name": "sirius-backend",
+  "version": "1.0.0",
+  "description": "Backend for Sirus App",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterkeysrd/sirius.git"
+  },
+  "keywords": [
+    "ecomerce",
+    "sales"
+  ],
+  "author": "David Morales",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/masterkeysrd/sirius/issues"
+  },
+  "homepage": "https://github.com/masterkeysrd/sirius#readme"
+}
