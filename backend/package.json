@@ -4,9 +4,10 @@
   "description": "Backend for Sirus App",
   "main": "./app.js",
   "scripts": {
-    "start": "node ./app.js",
-    "serve": "nodemon ./app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www.js",
+    "start-dev": "nodemon ./bin/www.js",
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -22,12 +23,19 @@
     "url": "https://github.com/masterkeysrd/sirius/issues"
   },
   "homepage": "https://github.com/masterkeysrd/sirius#readme",
+  "jest": {
+    "verbose": true
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.1"
   }
 }

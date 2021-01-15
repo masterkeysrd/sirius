@@ -1,0 +1,48 @@
+openapi: "3.0.0"
+info:
+  description: "Api Specification to sirius app."
+  title: "Sirius"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "David Morales"
+    email: "morales.david1997@gmail.com"
+  version: "1.0.0"
+servers:
+  - url: 'http://localhost:4000/api'
+    description: "Local Development Server"
+tags:
+  - name: Home
+    description: Home Endpoints
+paths:
+  /:
+    get:
+      tags:
+        - "Home"
+      description: "Return a welcome message."
+      responses:
+        '200':
+          description: "A Welcome message"
+          content:
+            application/json:
+              schema:
+                type: string
+                default: "Server is running OK."
+
+components:
+  schemas:
+    BaseError:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+  responses:
+    NotFound:
+      description: Entity Not Found.
+    BadRequest:
+      description: Bad Request
+    InternalServer:
+      description: Internal Server Error
+    
